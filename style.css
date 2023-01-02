@@ -1,0 +1,126 @@
+
+/* Importando fonte */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #F3F5FC;
+    margin: 0 3em;
+}
+
+/* CABEÇALHO */
+
+header {
+    position: absolute;
+    top: 1em;
+    left: 3em;
+}
+
+header img {
+    width: 6em;
+}
+
+
+/* CORPO */
+
+main {
+    display: flex;
+}
+
+/* FORMULÁRIO */
+
+form {
+    width: 75%;
+    margin: 6em 1em 5em 10em;
+}
+
+label {
+    display: block;
+    color: #0A3871;
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+textarea {
+    border: none;
+    border-radius: 20px;
+    font-size: 2em;
+    padding: 10px;
+    color: #0A3871;
+    /* Fixa o tamanho do textarea */
+    resize: none; 
+}
+
+/* Tira a borda do textarea quando clicado */
+textarea:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+form p {
+    font-size: 12px;
+    color: #495057;
+    margin: 1.5em auto;
+}
+
+form p img {
+    vertical-align: bottom;
+    margin-right: 6px;
+}
+
+button {
+    padding: 1.2em;
+    border-radius: 18px;
+    width: 20em;
+    font-size: 1em;
+}
+
+#criptografar {
+    background-color: #0A3871;
+    color: #FFFFFF;
+    border: none;
+    margin-right: 1.2em;
+}
+
+#descriptografar {
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+}
+
+/* Retorno de Mensagem Criptografada */
+div {
+    background-color: #FFFFFF;
+    width: 30%;
+    height: 40em;
+    align-content: flex-end;
+    margin: 1em 0 0;
+    border-radius: 20px;
+}
+
+div img {
+    margin: 10em auto 1em;
+    width: 80%;
+    display: flex;
+    align-self: center;
+}
+
+div h3 {
+    text-align: center;
+    margin: 2em 2em 1em;
+    color: #343A40;
+}
+
+div p {
+    text-align: center;
+    font-size: 0.8em;
+    margin: 0 auto;
+    padding: 0 2em;
+    color: #495057;
+}
