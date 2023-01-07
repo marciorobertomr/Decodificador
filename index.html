@@ -16,27 +16,30 @@
 
         <main>
 
-            <form>
-                <label for="texto">Digite seu texto</label>
-                <textarea name="" id="texto" cols="38" rows="9"></textarea>
-                <!-- <input type="text" id="texto"> -->
-                
-                <p>
-                    <img src="./img/Group.svg" alt="Exclamação para atenção"> 
-                    Apenas letras maísculas e sem acento.
-                </p>
-    
-                <button id="criptografar">Criptografar</button>
-                <button id="descriptografar">Descriptografar</button>
-            </form>
+            <div class="principal">
+                <form>
+                    <label for="texto">Digite seu texto</label>
+                    <textarea name="" id="texto" cols="38" rows="9"></textarea>
+                    <!-- <input type="text" id="texto"> -->
+                    
+                    <p>
+                        <img src="./img/Group.svg" alt="Exclamação para atenção"> 
+                        Apenas letras maísculas e sem acento.
+                    </p>
+        
+                </form>
 
-            <div class="resultado">
+                <button id="criptografar" onClick="criptografar()">Criptografar</button>
+                <button id="descriptografar" onClick="descriptografar()">Descriptografar</button>
+            </div>
+
+            <div class="resultado" id="resultado">
                 <img src="./img/High quality products 1 1.svg" alt="Pessoa desenhada investigando um diamante com o auxilio de uma lupa">
                 <h3>Nenhuma mensagem encontrada</h3>
                 <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
             </div>
 
         </main>
-
+        <script src="./main.js"></script>
     </body>
 </html>

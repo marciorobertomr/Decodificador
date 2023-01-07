@@ -35,7 +35,7 @@ main {
 
 /* FORMULÁRIO */
 
-form {
+.principal {
     width: 75%;
     margin: 6em 1em 5em 10em;
 }
@@ -50,7 +50,7 @@ label {
 textarea {
     border: none;
     border-radius: 20px;
-    font-size: 2em;
+    font-size: 1.6em;
     padding: 10px;
     color: #0A3871;
     /* Fixa o tamanho do textarea */
@@ -95,7 +95,7 @@ button {
 }
 
 /* Retorno de Mensagem Criptografada */
-div {
+.resultado {
     background-color: #FFFFFF;
     width: 30%;
     height: 40em;
@@ -104,20 +104,20 @@ div {
     border-radius: 20px;
 }
 
-div img {
+.resultado img {
     margin: 10em auto 1em;
     width: 80%;
     display: flex;
     align-self: center;
 }
 
-div h3 {
+.resultado h3 {
     text-align: center;
     margin: 2em 2em 1em;
     color: #343A40;
 }
 
-div p {
+.resultado p {
     text-align: center;
     font-size: 0.8em;
     margin: 0 auto;
