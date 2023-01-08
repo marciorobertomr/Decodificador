@@ -15,9 +15,14 @@
 
 // Já com o join, não precisamos fazer o uso do replace, pois já conseguimos passar o parâmetro para os separadores desejados
 
+let texto = "";
+let textoLista = [];
+let botaoCopiar = false;
+
 function criptografar() {
-    let texto = "";
-    let textoLista = [];
+
+    texto = "";
+    textoLista = [];
 
     texto = document.getElementById('texto').value;
 
@@ -39,12 +44,13 @@ function criptografar() {
         }
     }
     
-    document.getElementById('resultado').innerHTML += textoLista.join('');
+    document.getElementById('mensagem').remove();
+    document.getElementById('resultado').innerHTML += "<div id='mensagem'><div class='nova-mensagem'><span id='codificacao'>" + textoLista.join('') + "</span></div> <div><button class='botao-copiar' onClick='copiarTexto()'>Copiar</button></div></div>";
 }
 
 function descriptografar() {
-    let texto = "";
-    let textoLista = [];
+    texto = "";
+    textoLista = [];
 
     texto = document.getElementById('texto').value;
 
@@ -71,5 +77,16 @@ function descriptografar() {
         }
     }
 
-    document.getElementById('resultado').innerHTML += textoLista.join('');
+    document.getElementById('mensagem').remove();
+    document.getElementById('resultado').innerHTML += "<div id='mensagem'><div class='nova-mensagem'><span id='codificacao'>" + textoLista.join('') + "</span></div> <div><button class='botao-copiar' onClick='copiarTexto()'>Copiar</button></div></div>";
+}
+
+function copiarTexto() {
+    let textoCopiado = document.getElementById('codificacao').innerHTML;
+    navigator.clipboard.writeText(textoCopiado); //Aplica o texto copiado para a área de transferência
+}
+
+function limpar() {
+    document.getElementById('texto').value = "";
+    document.getElementById('mensagem').innerHTML = "<div id='mensagem'><img src='./img/High quality products 1 1.svg' alt='Pessoa desenhada investigando um diamante com o auxilio de uma lupa'><h3>Nenhuma mensagem encontrada</h3><p>Digite um texto que você deseja criptografar ou descriptografar.</p></div>";
 }
