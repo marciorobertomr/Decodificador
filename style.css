@@ -37,7 +37,7 @@ main {
 
 .principal {
     width: 75%;
-    margin: 6em 1em 5em 10em;
+    margin: 6em 1em 0 10em;
 }
 
 label {
@@ -51,8 +51,8 @@ textarea {
     border: none;
     border-radius: 20px;
     font-size: 1.2em;
-    width: 30em;
-    height: 15em;
+    width: 32em;
+    height: 17em;
     padding: 10px;
     color: #0A3871;
     /* Fixa o tamanho do textarea */
@@ -103,7 +103,7 @@ form p img {
     color: #0A3871;
 }
 
-/* Retorno de Mensagem Criptografada */
+/* RETORNO DA MENSAGEM MODIFICADA */
 .resultado {
     background-color: #FFFFFF;
     width: 36%;
@@ -136,7 +136,7 @@ form p img {
 }
 
 .resultado span {
-    font-size: 0.8em;
+    font-size: 1em;
     color: darkblue;
     /* font-weight: bold; */
     word-wrap: break-word;
@@ -160,4 +160,15 @@ form p img {
     background-color: #D8DFE8;
     border: 1px solid #0A3871;
     color: #0A3871;
+}
+
+/* RODAPÉ */
+
+footer {
+    font-size: 0.8em;
+    line-height: 1.5em;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    margin: 1em auto;
 }
