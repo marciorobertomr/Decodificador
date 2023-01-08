@@ -159,6 +159,16 @@ form p img {
     color: #0A3871;
 }
 
+#criptografar:hover {
+    transition: 1.5s;
+    opacity: 0.7;
+}
+
+#descriptografar:hover, #limpar:hover, .botao-copiar:hover {
+    transition: 1.5s;
+    filter: brightness(90%);
+}
+
 /* RODAPÉ */
 
 footer {
